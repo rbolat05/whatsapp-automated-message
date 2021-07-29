@@ -12,7 +12,11 @@ options.add_argument('--profile-directory=Default')
 def sender(msg, phones_list):
     counter = 0
     driver = webdriver.Chrome(chromedriver_path, options = options)
-    for phone in phones_list:        
+    for index, phone in enumerate(phones_list):
+        if index == 0:
+            driver.get('web.whatsapp.com')
+            time.sleep(30)
+
         try:
             url='https://web.whatsapp.com/send?phone='+phone
             driver.get(url)
@@ -32,4 +36,3 @@ def sender(msg, phones_list):
     print('Your message sent to {} number.'.format(counter))
     driver.quit()
 
-    #C:/Users/Rodi/AppData/Local/Google/Chrome/User
