@@ -1,5 +1,5 @@
 from scraper import sender
-from preprocesser import Preprocesser
+from preprocessor import Preprocessor
 from file_reader import reader
 from bot_settings import phones_filetype
 
