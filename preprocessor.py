@@ -1,4 +1,4 @@
-class Preprocesser:
+class Preprocessor:
     
     def tr(phone):
         phone = str(phone)
