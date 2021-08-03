@@ -4,4 +4,4 @@ First change bot_settings variables.
 Write down your message into message.txt file.
 Run main.py and do something else to save your time.
 
-NOTE: Phone number preprocessing is only supperted for Turkey numbers. You may add your own func to Preprocessing class.
+NOTE: Phone number preprocessing is only supperted for Turkish numbers. You may add your own func to Preprocessing class.
